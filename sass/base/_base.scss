@@ -1,0 +1,57 @@
+:root {
+    // VARIÁVEIS DE COR
+    --cor-primaria: #bd9c26;
+    --cor-primaria-escura-1: #6D5D4B;
+    --cor-primaria-escura-2: #392a16;
+    --cor-primaria-escura-3: #231c07;
+    --cor-cinza:#8D98A7;
+    --cor-cinza-claro:#dbe2ee;
+    --cor-cinza-escuro:#343536;
+
+    // VARIÁVEIS DE FONTE
+    --fonte-primaria: 'Nunito', sans-serif;
+    --fonte-display: 'Merriweather', serif;
+}
+
+//BREAKPOINTS RESPONSIVOS
+// 1200px = 75em
+// 992px = 62em
+// 768px = 48em 
+// 600px = 37.5em
+
+html, body, html::before, body::before, html::after, body::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 50%; // 8px/16px = 50% -> 1rem = 8px
+
+    @media only screen and (min-width: 75em) {
+        font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    }
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-cinza-escuro);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 6rem calc(100vh - 6rem);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (min-width: 48em) { 
+        grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    }
+
+    @media only screen and (min-width: 62em) { 
+        grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+}

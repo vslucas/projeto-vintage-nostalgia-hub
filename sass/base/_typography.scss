@@ -1,0 +1,55 @@
+%heading {
+    font-family: var(--fonte-display);
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 4rem;
+    color: var(--cor-cinza);
+    line-height: 1;
+    margin: 0;
+}
+
+.heading-2 { // VERIFICAR SE AS CONFIGURAÇÕES DE MARGEM DARÃO PROBLEMA EM OUTRAS PARTES DO SITE
+    @extend %heading;
+    font-size: 3rem;
+    font-style: italic;
+    line-height: 1;
+    margin: 2rem 0 2rem;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.75rem;
+    margin: 0;
+
+    &--claro {
+        color: var(--cor-cinza-claro);
+    }
+}
+
+.btn {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--fonte-display);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: var(--cor-primaria-escura-1);
+    }
+}

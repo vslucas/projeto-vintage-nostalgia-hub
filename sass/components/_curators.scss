@@ -1,0 +1,43 @@
+.curators {
+    background-color: #1f2125ed;
+    grid-column: 1 / -1;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    
+    @media only screen and (min-width: 48em) {
+        grid-column: col-start 7 / full-end;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        column-gap: 2rem;
+        row-gap: 5vh;
+        align-items: center;
+
+        @media only screen and (min-width: 37.5em) { 
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media only screen and (min-width: 48em) { 
+            grid-template-columns: min-content max-content;
+        }
+    }
+
+    &__img {
+        width: 7rem;
+        border-radius: 50%;
+        display: block;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        color: var(--cor-cinza-claro);
+        margin-top: -3px;
+    }
+}

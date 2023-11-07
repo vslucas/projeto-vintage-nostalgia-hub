@@ -1,0 +1,73 @@
+.header {
+    background-color: var(--cor-cinza-escuro);
+    grid-column: 1 / -1;
+    background-image: linear-gradient(rgba(37, 37, 39, 0.850), rgba(37, 37, 39, .850)), url(../../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    row-gap: 1.5rem;
+    justify-content: center;
+
+    @media only screen and (min-width: 37.5em) {
+        padding: 4rem 8rem 8rem;
+    }
+
+    @media only screen and (min-width: 48em) {
+        grid-column: full-start / col-end 6;
+    }
+
+    &__logo {
+        height: 8rem;
+        margin-bottom: 1rem;
+        justify-self: center;
+
+        @media only screen and (min-width: 37.5em) {
+            height: 10rem;
+        }
+    }
+
+    &__btn {
+        align-self: start;
+        justify-self: start;
+    }
+
+    &__seen-text {
+        font-size: 1.6rem;
+        color:white; //Ver isso aqui depois
+
+        display: flex;
+		gap: 1.5rem;
+		width: 100%;
+		align-items: center;
+
+        &::before, &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+            flex: 1;
+        }
+    }
+
+    &__seen-logos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        @media only screen and (min-width: 37.5em) {
+            justify-content: space-between;
+        }
+
+        img {
+            max-height: 2.5rem;
+            max-width: 100%;
+            filter: brightness(80%);
+        }
+    }
+}
