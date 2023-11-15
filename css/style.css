@@ -307,6 +307,8 @@ body {
 }
 .story__img-1 {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   grid-row: 1/-1;
   grid-column: 3/7;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
@@ -319,6 +321,8 @@ body {
 }
 .story__img-2 {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   grid-row: 1/-1;
   grid-column: 2/4;
   z-index: 1;
@@ -504,9 +508,20 @@ body {
   }
 }
 .header__seen-logos img {
-  max-height: 2.5rem;
-  max-width: 100%;
+  height: 1.9rem;
+  width: 9.25rem;
   filter: brightness(80%);
+}
+@media only screen and (min-width: 48em) {
+  .header__seen-logos img {
+    width: 8.75rem;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .header__seen-logos img {
+    height: 2.5rem;
+    width: 11rem;
+  }
 }
 
 .sidebar {
