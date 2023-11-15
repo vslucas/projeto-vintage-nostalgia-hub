@@ -2,7 +2,7 @@
     &__photos {
         background-color: var(--cor-primaria);
         grid-column: 1 / -1;
-        background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
+        background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.webp);
         background-size: cover;
 
         display: grid;

@@ -1,7 +1,7 @@
 .header {
     background-color: var(--cor-cinza-escuro);
     grid-column: 1 / -1;
-    background-image: linear-gradient(rgba(37, 37, 39, 0.850), rgba(37, 37, 39, .850)), url(../img/background.jpg);
+    background-image: linear-gradient(rgba(37, 37, 39, 0.850), rgba(37, 37, 39, .850)), url(../img/background.webp);
     background-size: cover;
     background-position: center;
     padding: 5rem;
@@ -37,7 +37,7 @@
 
     &__seen-text {
         font-size: 1.6rem;
-        color:white; //Ver isso aqui depois
+        color:white;
 
         display: flex;
 		gap: 1.5rem;

@@ -39,7 +39,7 @@
 
 .btn {
     background-color: var(--cor-primaria);
-    color: white;
+    color: #0f0f0f;
     border: none;
     border-radius: 3px;
     font-family: var(--fonte-display);
@@ -50,6 +50,7 @@
     transition: all .2s;
 
     &:hover {
+        color: white;
         background-color: var(--cor-primaria-escura-1);
     }
 }
