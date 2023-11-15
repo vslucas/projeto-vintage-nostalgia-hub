@@ -22,6 +22,8 @@
 
     &__logo {
         height: 8rem;
+        width: 100%;
+        object-fit: contain;
         margin-bottom: 1rem;
         justify-self: center;
 
@@ -33,6 +35,7 @@
     &__btn {
         align-self: start;
         justify-self: start;
+        margin-top: 1rem;
     }
 
     &__seen-text {
@@ -60,22 +63,22 @@
         justify-content: center;
         gap: 2rem;
 
+        @media only screen and (min-width: 26.5em) {
+            flex-wrap: nowrap;
+        }
+        
         @media only screen and (min-width: 37.5em) {
             justify-content: space-between;
         }
 
         img {
-            height: 1.9rem;
-            width: 9.25rem;
+            height: 2.5rem;
+            width: 45%;
+            object-fit: contain;
             filter: brightness(80%);
 
-            @media only screen and (min-width: 48em) {
-                width: 8.75rem;
-            }
-            
-            @media only screen and (min-width: 62em) {
-                height: 2.5rem;
-                width: 11rem;
+            @media only screen and (min-width: 26.5em) {
+                width: 100%;
             }
         }
     }

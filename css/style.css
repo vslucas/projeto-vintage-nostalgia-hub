@@ -468,6 +468,8 @@ body {
 }
 .header__logo {
   height: 8rem;
+  width: 100%;
+  object-fit: contain;
   margin-bottom: 1rem;
   justify-self: center;
 }
@@ -479,6 +481,7 @@ body {
 .header__btn {
   align-self: start;
   justify-self: start;
+  margin-top: 1rem;
 }
 .header__seen-text {
   font-size: 1.6rem;
@@ -502,25 +505,25 @@ body {
   justify-content: center;
   gap: 2rem;
 }
+@media only screen and (min-width: 26.5em) {
+  .header__seen-logos {
+    flex-wrap: nowrap;
+  }
+}
 @media only screen and (min-width: 37.5em) {
   .header__seen-logos {
     justify-content: space-between;
   }
 }
 .header__seen-logos img {
-  height: 1.9rem;
-  width: 9.25rem;
+  height: 2.5rem;
+  width: 45%;
+  object-fit: contain;
   filter: brightness(80%);
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 26.5em) {
   .header__seen-logos img {
-    width: 8.75rem;
-  }
-}
-@media only screen and (min-width: 62em) {
-  .header__seen-logos img {
-    height: 2.5rem;
-    width: 11rem;
+    width: 100%;
   }
 }
 
