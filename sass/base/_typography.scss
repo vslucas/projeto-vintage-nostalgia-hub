@@ -11,7 +11,7 @@
     margin: 0;
 }
 
-.heading-2 { // VERIFICAR SE AS CONFIGURAÇÕES DE MARGEM DARÃO PROBLEMA EM OUTRAS PARTES DO SITE
+.heading-2 {
     @extend %heading;
     font-size: 3rem;
     font-style: italic;
