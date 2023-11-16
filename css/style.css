@@ -81,7 +81,7 @@ body {
   font-size: 1.75rem;
   margin: 0;
 }
-.heading-4--claro {
+.heading-4--light {
   color: var(--cor-cinza-claro);
 }
 
@@ -199,6 +199,15 @@ body {
   color: var(--cor-primaria);
   text-transform: uppercase;
   margin: 0;
+}
+.curators__heading {
+  font-family: var(--fonte-display);
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin: 0;
+}
+.curators__heading--light {
+  color: var(--cor-cinza-claro);
 }
 .curators__list {
   display: grid;
