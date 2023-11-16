@@ -192,6 +192,14 @@ body {
     grid-column: col-start 7/full-end;
   }
 }
+.curators__title {
+  font-family: var(--fonte-display);
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--cor-primaria);
+  text-transform: uppercase;
+  margin: 0;
+}
 .curators__list {
   display: grid;
   grid-template-columns: min-content max-content;
