@@ -23,19 +23,19 @@
     }
 
     &__favorite {
-       grid-row: 1 / 2; 
-       grid-column: 2 / 3;
-       fill: var(--cor-primaria);
-       height: 2.5rem;
-       width: 2.5rem;
-       z-index: 2;
-       justify-self: end;
-       margin: 1rem;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        fill: var(--cor-primaria);
+        height: 2.5rem;
+        width: 2.5rem;
+        z-index: 2;
+        justify-self: end;
+        margin: 1rem;
 
-       &:hover {
-        fill: red;
-        cursor: pointer;
-       }
+        &:hover {
+            fill: red;
+            cursor: pointer;
+        }
     }
 
     &__name {
@@ -67,7 +67,7 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        
+
         svg {
             fill: var(--cor-primaria);
             height: 2rem;
@@ -81,5 +81,10 @@
 
     &__btn {
         grid-column: 1 / -1;
+    }
+
+    //Deixar o ícone favorito de coração marcado quando o usuário clicar nele
+    &__fulfilled {
+        fill: red;
     }
 }
